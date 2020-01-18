@@ -28,7 +28,8 @@ $("#search-button").on("click", function(event) {
     var searchValue = $("#search-form").val().trim();
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchValue + "&api_key=p18dA5Q1Xvc80bSdVEBrgSxQu6v3Rlmy&limit=15";
-
+    
+    
     teamArray.push(searchValue);
 
     $("#gif-display").empty();
@@ -66,7 +67,7 @@ $("#search-button").on("click", function(event) {
                 ratingP.css("color", "white");
             }
         var gifImage = $("<img>");
-        gifImage.attr("src", results[i].images.fixed_height_still.url);
+        gifImage.attr("src", results[i].images.fixed_height.url);
         gifDiv.append(ratingP);
         gifDiv.append(gifImage);
         $("#gif-display").prepend(gifDiv);
@@ -118,7 +119,7 @@ $("#favorites").on("click", ".team", function(event) {
             ratingP.css("color", "white");
         }
         var gifImage = $("<img>");
-        gifImage.attr("src", results[i].images.fixed_height_still.url);
+        gifImage.attr("src", results[i].images.fixed_height.url);
         gifDiv.append(ratingP);
         gifDiv.append(gifImage);
         $("#gif-display").prepend(gifDiv);
@@ -134,8 +135,5 @@ $("#favorites").on("click", ".team", function(event) {
 
     console.log(buttonValue);
 });
-
-
-
 
 createButtons();
