@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "NFL Red Zone";
+    src: url("../fonts/RedZone.ttf") format("truetype");
+}
+
+body {
+    background-image: url(../images/football-field-high-quality-wallpaper-high-resolution-wallpaper.jpg);
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-family: "NFL Red Zone";
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team {
+    border-radius: 90px  45px;
+    background: brown;
+    border-color: rgb(90, 16, 16);
+    color: white;
+    margin: 5px;
+}
+
+#favorites {
+    margin: 5px 150px 40px;
+    text-align: center;
+}
+
+#search-bar {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#search-button {
+    margin-top: 10px;
+    background-color: brown;
+    border-color: rgb(90, 16, 16);
+    border-radius: 90px / 45px;
+}
+
+#gif-display {
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.gif-div {
+    display: inline-block;
+    margin: 20px;
+}
+
+p {
+    background-color: white;
+    color: black;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 50px;
+
+    
+}
